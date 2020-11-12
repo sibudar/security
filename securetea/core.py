@@ -267,7 +267,7 @@ class SecureTea(object):
             sys.exit(0)
 
         self.logger.log(
-            "Welcome to SecureTea..!! Initializing System",
+            "Intrusion system Initializing",
             logtype="info"
         )
 
@@ -345,7 +345,7 @@ class SecureTea(object):
                     logtype="error"
                 )
             else:
-                self.telegram.notify("Welcome to SecureTea..!! Initializing System")
+                self.telegram.notify("Initializing Intrusion System")
 
         if self.twilio_provided:
             self.twilio = secureTeaTwilio.SecureTeaTwilio(
